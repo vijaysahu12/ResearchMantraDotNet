@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>false</InvariantGlobalization>
+		<LangVersion>12.0</LangVersion>
+		<IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Assets\**" />
+	  <Content Remove="Assets\**" />
+	  <EmbeddedResource Remove="Assets\**" />
+	  <None Remove="Assets\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="brevo_csharp" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.6.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.6.1" />
+    
+		<PackageReference Include="libphonenumber-csharp" Version="8.13.55" />
+		<PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
+		<PackageReference Include="Quartz" Version="3.13.1" />
+		<PackageReference Include="Quartz.Extensions.Hosting" Version="3.13.1" />
+		<PackageReference Include="Scrutor" Version="6.0.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+
+  </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RM.BlobStorage\RM.BlobStorage.csproj" />
+		<ProjectReference Include="..\RM.CommonServices\RM.CommonServices.csproj" />
+		<ProjectReference Include="..\RM.Database\RM.Database.csproj" />
+		<ProjectReference Include="..\RM.MService\RM.MService.csproj" />
+		<ProjectReference Include="..\RM.PusherMService\RM.NotificationService.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Update="local_firebase.json" CopyToPublishDirectory="Never">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Update="*.txt" CopyToPublishDirectory="Never" />
+		<Content Update="*.config" CopyToPublishDirectory="Never" />
+		<Content Update="appsettings.json" CopyToPublishDirectory="Never">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
+    <Content Update="*.json" CopyToPublishDirectory="Never">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+		<Content Update="ClientApp\**" CopyToPublishDirectory="Never" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Content Update="itextsharp.dll" CopyToPublishDirectory="Never" />
+		<Content Update="local_firebase.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Update="prod_firebase.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Folder Include="logs\" />
+	</ItemGroup>
+
+</Project>

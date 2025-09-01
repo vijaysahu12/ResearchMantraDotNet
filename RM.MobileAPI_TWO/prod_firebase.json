@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "kingresearchmobile",
+  "private_key_id": "8609beba03ee7df37d47ac796e323d1d27befe23",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDB2W+JRdaOHc/+\nm6M0W87s6LtxB2WdrUOuoAuXLiMythb+Guf0gKcsqH/BXwrGPIzQYeBFCrAC7KQ7\n6JwjeY0fNmBjCkgfJQ/UsKqZRmifoQIqwBnaXESK4BN9MkpMUHBHoziBB0GzRugR\nwHd2DbDX+WY60qXHyB1zvEg+EfqHIEW3tSBV4uggCwwTYYUYRgORjoGvqUX/I72k\nJNHaJs74I9Gw55JP+IYNX2c3MCbe09z/c1IuNYF/cVUBMfRY26sjjGDhCwMhe4ok\n8pdxoyL2unn7IUgdcLCjNpLi3vItKK49C2pQpMGVPmTefPhJvvS7E/OvwvKC08ys\nkPtIErNhAgMBAAECggEAQlwP/ZslxsLX6B4ZcZwYKyvEtv3EQIUGzWnGbfuCWyLQ\nni5Rx3afQ/9utKC3jIM/5ToMTzZIaMfftQ59HPvIXq37swvbAqZqU/IihJQAztyM\nZFwcvY6mfDAXG92yZ4uF1FBA0JLOX/PfD+ymOIiZSGX9JBfmXozX4D3NMUpwS/8b\nkhGc5P3AiZF1jOMW93nUd1WpWaBbbTrXxyD6rsS2jbVgavf+1c9lalVcxu8AxY0s\npiuGVpcQsCadDVT2RAGM3J8PQCn8Wen89ojZXSQOmyahFDd7CbDzxXFnhwRJLmZF\nF3RmYj/pRvUgUBxtaiqUbTq9R5SAsT2VYtytwD74PQKBgQD76ByXAknN7qQ3wSqf\neECcOPZBowmDS84MQ0sTGPndT4xMq63ULDbOpxWKPfrWs2nuOkcbTU9EhpKAvXXx\nmjTexcGU6y1tZdvAtBHLHAse40g0+pgRYr3fhetNMJ6UQpNnzn84koUKxMGtQeuj\nZYCF+WBUSLjUlVtXUOpBQg7mKwKBgQDE/9DHyDVdzEebtWC96MRUMmyhafSzlgR4\nnDZG6RMMoPV5Znxq/eeWCaLGQFV7wJZIsb/owl77xMnR1bBmMJEtLFPXWIUoPI/K\nWQsQkhmlFEPnsr4ZhA11YQPIxzE4+NGNbr9Wzwrq8K8GK/4GOwXLW2QbV6MzR7Ev\nfCX45cVyowKBgFgYMT9iLntVFJrm88f3HulDRmNn5+DBtto1AmE4X9FUi2UYuN61\nY6lbZz4ENN+2uLn2KX3TyH/XbA6Xs1J9sjWiBPPWVvmmIHbAwmQ8d2si4tKcPGgA\nFxS/Wa2R7jM9IR2xam5XVy2P54d2wThQO+Uec+Cl2fWGEf50LqgJuPonAoGBAKCI\nzvxe/I4pUBllXyajLopmZPvMumo2UAJxWhHDEZDzAdciWzVdH4G27HyeJIsqT82B\nfCATdQ+6N7TVbGB6J3QmcVRFgI1ffNWqZkfkpx1NPGDt2dg1Mjp7CnhtSoFg0nNs\n0mPNaNo3tIlVBDbTlk83dIaLjiTVwWAuzUrdA1/9AoGABPZG0CngeW+9veNSYGYA\nzRlCsH48uTvKxmnBTHosqg0Cw0E1juKLCQXoIIHL8up3CVgFF0RfkcQjesuNHd+Q\nU/VmuTwRt+iB9u0CtiCPbB5SzD7MvopiIug5Rn4K4ZrTooimX/deVbVH3SAtM8PD\nh9sPiTqtUl2UrrEqnH2VV9g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-92i39@kingresearchmobile.iam.gserviceaccount.com",
+  "client_id": "100309211347602783398",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-92i39%40kingresearchmobile.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

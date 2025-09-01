@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "87513680665",
+    "project_id": "mobileauthv3-c6f14",
+    "storage_bucket": "mobileauthv3-c6f14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87513680665:android:d98b6ce2ade3e1621a1388",
+        "android_client_info": {
+          "package_name": "com.example.kraapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnT2fq94P5oxAr6-mHcsx-cYq1-KkYsiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

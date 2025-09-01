@@ -1,0 +1,6 @@
+@RM.MobileAPI_HostAddress = http://localhost:5291
+
+GET {{RM.MobileAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
