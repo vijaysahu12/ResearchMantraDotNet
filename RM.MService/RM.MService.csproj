@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.2.0" />
+    <PackageReference Include="MongoDB.Driver" Version="3.2.0" />
+    <PackageReference Include="RestSharp" Version="112.1.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RM.BlobStorage\RM.BlobStorage.csproj" />
+    <ProjectReference Include="..\RM.CommonServices\RM.CommonServices.csproj" />
+    <ProjectReference Include="..\RM.Database\RM.Database.csproj" />
+    <ProjectReference Include="..\RM.Model\RM.Model.csproj" />
+    <ProjectReference Include="..\RM.PusherMService\RM.NotificationService.csproj" />
+  </ItemGroup>
+
+</Project>

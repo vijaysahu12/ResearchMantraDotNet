@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Users] (
+    [Id]           INT              IDENTITY (1, 1) NOT NULL,
+    [FirstName]    VARCHAR (100)    NULL,
+    [LastName]     VARCHAR (100)    NULL,
+    [MobileNumber] VARCHAR (100)    NULL,
+    [PasswordHash] VARBINARY (500)  NULL,
+    [PasswordSalt] VARBINARY (300)  NULL,
+    [EmailId]      VARCHAR (100)    NULL,
+    [DOJ]          VARCHAR (100)    NULL,
+    [Address]      VARCHAR (300)    NULL,
+    [RoleKey]      VARCHAR (100)    NULL,
+    [Gender]       VARCHAR (100)    NULL,
+    [UserImage]    VARCHAR (300)    NULL,
+    [IsDisabled]   TINYINT          DEFAULT ((0)) NULL,
+    [IsDelete]     TINYINT          DEFAULT ((0)) NULL,
+    [PublicKey]    UNIQUEIDENTIFIER DEFAULT (newsequentialid()) NULL,
+    [CreatedOn]    DATETIME         DEFAULT (getdate()) NULL,
+    [CreatedBy]    VARCHAR (100)    NULL,
+    [ModifiedOn]   DATETIME         DEFAULT (NULL) NULL,
+    [ModifiedBy]   VARCHAR (100)    NULL,
+    [Password]     VARCHAR (100)    DEFAULT (NULL) NULL,
+    [PasswordKey]  VARCHAR (50)     DEFAULT (NULL) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

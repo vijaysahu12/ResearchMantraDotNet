@@ -1,0 +1,120 @@
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\Office\Work\Kingresearch\Coding\crm_partner_kyc_2\DotNet\RM.API\Services\IMailService.cs:line 36
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\Office\Work\Kingresearch\Coding\crm_partner_kyc_2\DotNet\RM.API\Services\IMailService.cs:line 36
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest)
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\Office\Work\Kingresearch\Coding\crm_partner_kyc_2\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at RM.API.Services.MailService.SendEmailAsync(MailRequest mailRequest) in D:\KingResearch\kingcrm\DotNet\RM.API\Services\IMailService.cs:line 36
+Value cannot be null. (Parameter 'text')

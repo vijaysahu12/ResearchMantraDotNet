@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+  <TargetFramework>net9.0</TargetFramework>
+  <LangVersion>12.0</LangVersion>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+    <UserSecretsId>0ff792e9-c2aa-4ea3-8a30-f648fe4e327d</UserSecretsId>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ToDeleteImports\**" />
+    <Content Remove="ToDeleteImports\**" />
+    <EmbeddedResource Remove="ToDeleteImports\**" />
+    <None Remove="ToDeleteImports\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="PartnerAccount_Vijay.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\Production_API.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="EPPlus" Version="7.6.0" />
+    <PackageReference Include="libphonenumber-csharp" Version="8.13.55" />
+    <PackageReference Include="MailKit" Version="4.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+    <PackageReference Include="MongoDB.Driver" Version="3.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+    <PackageReference Include="Quartz" Version="3.13.1" />
+    <PackageReference Include="Quartz.AspNetCore" Version="3.13.1" />
+    <PackageReference Include="RestSharp" Version="112.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.0" />
+    <PackageReference Include="Google.Apis" Version="1.69.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.69.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.69.0.3693" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\CallPerformanceImage\" />
+    <Folder Include="DB Script\Backu\28 Feb 2023\" />
+    <Folder Include="DB Script\Backu\02 Feb 2023\" />
+    <Folder Include="DB Script\Backu\1 Mar 2023\" />
+    <Folder Include="Resources\KYCData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PartnerAccount_Vijay.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RM.ChatGPT\RM.ChatGPT.csproj" />
+    <ProjectReference Include="..\RM.CommonServices\RM.CommonServices.csproj" />
+    <ProjectReference Include="..\RM.Database\RM.Database.csproj" />
+    <ProjectReference Include="..\RM.Model\RM.Model.csproj" />
+    <ProjectReference Include="..\RM.MService\RM.MService.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <None Update="appsettings.Production.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <None Update="appsettings.test.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+    <Content Update="gdriveCredentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Images\imageDemo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\imageDemo1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+</Project>

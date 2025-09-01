@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Microsoft SQL Server (JetBrains)" uuid="fd460e04-1de5-4667-ae16-042b225af1d2">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Data Source=195.250.20.48;User ID=sa;password=krJKY7dcMc1uSZ7$;Initial Catalog=KingResearchTest;Trusted_Connection=True;Integrated Security=false;Encrypt=False</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Schema Compare [195.250.20.48]" uuid="bf1cdb5f-fff3-48ba-8389-83f1728cbc2f">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Data Source=195.250.20.48;Persist Security Info=True;Pooling=False;Multiple Active Result Sets=False;Encrypt=False;Application Name=&quot;Microsoft SQL Server Data Tools, Schema Compare&quot;</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

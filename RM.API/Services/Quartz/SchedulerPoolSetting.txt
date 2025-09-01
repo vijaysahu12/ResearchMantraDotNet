@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/18196717/quartz-net-scheduler-doesnt-fire-jobs-triggers-once-deployed?rq=3
+
+
+Go to IIS manager -> Application Pools -> Create a new pool, I named it Scheduler (any name is ok)
+Select Scheduler pool -> advanced Settings
+In General section, at Start Mode, Select AlwaysRunning (IIS 8.5) or true for (IIS 7.5, 8)
+In Process Model Section-> Idle Timeout(minutes) set to 0 (meaning: No Idel timeout)
+In Recycling section -> Regular time Interval set to 0 (meaning: no recycling)
+3. Deploy your Quartz site into that application pool. And send one request to the pool to "wake your app up" and it will run until u stop it.
+That's it.
