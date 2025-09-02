@@ -1,4 +1,4 @@
-﻿namespace RM.Database.KingResearchContext;
+﻿namespace RM.Database.ResearchMantraContext;
 
 public partial class Status
 {

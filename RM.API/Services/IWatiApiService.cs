@@ -1,7 +1,7 @@
 ﻿using RM.API.Models;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
@@ -28,7 +28,7 @@ namespace RM.API.Services
     public class WatiApiService : IWatiApiService
     {
         private readonly IConfiguration _configuration;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         readonly string watiBaseUrl = "";
         readonly string templateNameUrl = "";
         readonly string sendTemplateMessageUrl = "";
@@ -36,7 +36,7 @@ namespace RM.API.Services
         readonly string sendSessionMessage = "";
         readonly string authorizationToken = "";
 
-        public WatiApiService(KingResearchContext context, IConfiguration config)
+        public WatiApiService(ResearchMantraContext context, IConfiguration config)
         {
             _context = context;
             _configuration = config;

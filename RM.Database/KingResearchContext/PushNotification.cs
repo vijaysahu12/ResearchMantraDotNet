@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace RM.Database.KingResearchContext.Tables;
+namespace RM.Database.ResearchMantraContext.Tables;
 
 public partial class PushNotification
 {

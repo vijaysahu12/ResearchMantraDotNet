@@ -5,7 +5,7 @@ using RM.API.Models;
 using RM.CommonServices.Helpers;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using Microsoft.AspNetCore.Hosting;
@@ -34,12 +34,12 @@ namespace RM.API.Controllers
         private readonly ApiCommonResponseModel responseModel = new();
         private readonly IAuthRepository _repo;
         private readonly IConfiguration _config;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IWebHostEnvironment _environment;
         private readonly StockInsightService _insightService;
 
 
-        public UsersController(IAuthRepository repo, IConfiguration config, KingResearchContext context, IWebHostEnvironment environment, StockInsightService insightService)
+        public UsersController(IAuthRepository repo, IConfiguration config, ResearchMantraContext context, IWebHostEnvironment environment, StockInsightService insightService)
         {
             _repo = repo;
             _config = config;

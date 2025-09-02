@@ -2,7 +2,7 @@
 using RM.API.Helpers;
 using RM.API.Services;
 using RM.CommonServices.Helpers;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -21,12 +21,12 @@ namespace RM.API.Controllers
     [ApiController]
     public class PartnerAccountsController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IPartnerService _ipartnerService;
         private TokenAnalyser tokenObject = new();
         private TokenVariables loginUser = null;
 
-        public PartnerAccountsController(KingResearchContext context, IPartnerService iPartnerService)
+        public PartnerAccountsController(ResearchMantraContext context, IPartnerService iPartnerService)
         {
             _context = context;
             _ipartnerService = iPartnerService;

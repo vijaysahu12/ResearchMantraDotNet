@@ -1,6 +1,6 @@
 ﻿
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.MongoDbCollection;
@@ -38,13 +38,13 @@ namespace RM.NotificationService
         private readonly string _senderEmail;
         private readonly string _senderName;
         private readonly IConfiguration _config;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
         public BrevoEmailService(
             IOptions<BrevoSettings> settings,
             IMongoRepository<Log> mongoRepo,
             IConfiguration config,
-            KingResearchContext context)
+            ResearchMantraContext context)
         {
             _settings = settings.Value;
             _mongoRepo = mongoRepo;

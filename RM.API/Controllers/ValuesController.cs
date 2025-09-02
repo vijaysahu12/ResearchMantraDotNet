@@ -2,7 +2,7 @@
 using RM.API.Helpers;
 using RM.API.Models.Mail;
 using RM.API.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model.MongoDbCollection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -22,9 +22,9 @@ namespace RM.API.Controllers
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {
-        private readonly KingResearchContext _gurujiDbContext;
+        private readonly ResearchMantraContext _gurujiDbContext;
         private readonly IMailService _mailService;
-        public ValuesController(KingResearchContext gurujiDbContext, IMailService mailService)
+        public ValuesController(ResearchMantraContext gurujiDbContext, IMailService mailService)
         {
             _gurujiDbContext = gurujiDbContext;
             _mailService = mailService;

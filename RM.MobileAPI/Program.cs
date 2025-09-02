@@ -5,7 +5,7 @@ using RM.ChatGPT;
 using RM.CommonService;
 using RM.CommonServices;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.MobileAPI.Helpers;
 using RM.Model.MongoDbCollection;
@@ -42,7 +42,7 @@ var configuration = new ConfigurationBuilder()
 #region Injecting Services
 string connectionString = configuration.GetConnectionString("GurujiDevCS")!;
 
-//builder.Services.AddDbContext<KingResearchContext>(options =>
+//builder.Services.AddDbContext<ResearchMantraContext>(options =>
 //    options.UseSqlServer(connectionString)
 //           .EnableSensitiveDataLogging() // Log detailed query data
 //           .LogTo(Console.WriteLine));  // Log queries and context lifecycle to the console
@@ -55,7 +55,7 @@ builder.Services.AddSingleton<IMongoDatabase>(provider =>
     return client.GetDatabase(mongoSettings.DatabaseName);
 });
 builder.Services.AddHttpClient();
-builder.Services.AddDbContext<KingResearchContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<ResearchMantraContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
@@ -118,7 +118,7 @@ builder.Services.AddEndpointsApiExplorer();
 #region AddSwaggerGen
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mobile API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "RM Mobile API", Version = "v1", Description = "API's for retrieving stock market data and analyzing market trends.", });
 
     // Add JWT Authentication to Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

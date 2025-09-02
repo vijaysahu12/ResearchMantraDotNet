@@ -1,5 +1,5 @@
 ﻿using RM.API.Helpers;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.RequestModel;
 using Microsoft.EntityFrameworkCore;
@@ -31,11 +31,11 @@ namespace RM.API.Services
     public class LearningMaterialService : ILearningMaterialService
     {
         private readonly ApiCommonResponseModel responseModel = new();
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
         private readonly IConfiguration _configuration;
         private string ImageHtml => $"<a href=\"imageFileName\"><img src=\"{_configuration["Mobile:BaseUrl"]}api/Product/GetImage?imageName=imageFileName\"></a>";
 
-        public LearningMaterialService(KingResearchContext context, IConfiguration configuration)
+        public LearningMaterialService(ResearchMantraContext context, IConfiguration configuration)
         {
             _dbContext = context;
             _configuration = configuration;

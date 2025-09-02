@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RM.Database.KingResearchContext.Tables
+namespace RM.Database.ResearchMantraContext.Tables
 {
     public class ExceptionLog
     {

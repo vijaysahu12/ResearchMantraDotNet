@@ -4,8 +4,8 @@ using RM.API.Models;
 using RM.API.Models.Mail;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
-using RM.Database.KingResearchContext.Tables;
+using RM.Database.ResearchMantraContext;
+using RM.Database.ResearchMantraContext.Tables;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -76,7 +76,7 @@ namespace RM.API.Services
 
     public class PurchaseOrderService : IPurchaseOrderService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IPushNotificationService _pushNotification;
         private readonly NotificationHub hub = new();
         private readonly ApiCommonResponseModel responseModel = new();
@@ -85,7 +85,7 @@ namespace RM.API.Services
         private readonly IActivityService _activityService;
 
 
-        public PurchaseOrderService(KingResearchContext context, IPushNotificationService pushNotification, IConfiguration configuration, IMailService mailService, IActivityService activityService)
+        public PurchaseOrderService(ResearchMantraContext context, IPushNotificationService pushNotification, IConfiguration configuration, IMailService mailService, IActivityService activityService)
         {
             _context = context;
 

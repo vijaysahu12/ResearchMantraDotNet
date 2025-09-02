@@ -3,7 +3,7 @@ using RM.BlobStorage;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -58,7 +58,7 @@ namespace RM.CommonServices
     {
         private ApiCommonResponseModel responseModel = new();
         private readonly IConfiguration _configuration;
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
         private readonly MongoDbService _mongoDbService;
         private readonly IMongoRepository<ExceptionLog> _exception;
         private readonly IMongoRepository<Log> _log;
@@ -66,7 +66,7 @@ namespace RM.CommonServices
         private readonly IAzureBlobStorageService _azureBlobStorageService;
         private readonly FirebaseNotification _firebaseNotification;
 
-        public MobileNotificationService(IConfiguration configuration, KingResearchContext context,
+        public MobileNotificationService(IConfiguration configuration, ResearchMantraContext context,
             MongoDbService mongoDbService, FirebaseNotification firebaseNotification, IAzureBlobStorageService azureBlobStorageService,
             IMongoRepository<Log> mongoRepo, IMongoRepository<ExceptionLog> exception)
         {

@@ -3,7 +3,7 @@ using RM.API.Helpers;
 using RM.API.Services;
 using RM.CommonServices.Helpers;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model.Common;
 using RM.Model.RequestModel;
 using Microsoft.AspNetCore.Http;

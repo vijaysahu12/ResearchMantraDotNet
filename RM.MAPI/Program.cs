@@ -1,4 +1,4 @@
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.MService.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 string connectionString = configuration.GetConnectionString("GurujiDevCS");
 
 // Add services to the container.
-builder.Services.AddDbContext<KingResearchContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<ResearchMantraContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddTransient<IAccountService, AccountService>();
 

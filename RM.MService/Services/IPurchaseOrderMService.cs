@@ -4,7 +4,7 @@ using RM.CommonServices;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -27,7 +27,7 @@ using System.Data.SqlTypes;
 using System.Globalization;
 using System.Net;
 using System.Text.Json;
-using static RM.Database.KingResearchContext.Subscriptions;
+using static RM.Database.ResearchMantraContext.Subscriptions;
 using static RM.MService.Services.PurchaseorderMService;
 using Task = System.Threading.Tasks.Task;
 
@@ -59,7 +59,7 @@ namespace RM.MService.Services
 
     public class PurchaseorderMService : IPurchaseOrderMService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         ApiCommonResponseModel responseModel = new();
         private readonly IConfiguration _config;
         private readonly ILogger<IPurchaseOrderMService> _logger;
@@ -71,7 +71,7 @@ namespace RM.MService.Services
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IConfiguration _configuration;
 
-        public PurchaseorderMService(KingResearchContext context, IConfiguration config, ILogger<IPurchaseOrderMService> logger, IMongoRepository<Model.MongoDbCollection.Log> mongoRepo,
+        public PurchaseorderMService(ResearchMantraContext context, IConfiguration config, ILogger<IPurchaseOrderMService> logger, IMongoRepository<Model.MongoDbCollection.Log> mongoRepo,
             IOtherService otherSerivce, IMobileNotificationService pushNotification, MongoDbService mongoRepository, IEmailService emailService, IHttpContextAccessor httpContextAccessor, IConfiguration configuration)
         {
             _context = context;

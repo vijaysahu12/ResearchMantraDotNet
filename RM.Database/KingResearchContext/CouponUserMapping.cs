@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RM.Database.KingResearchContext
+namespace RM.Database.ResearchMantraContext
 {
     public class CouponUserMappingM
     {

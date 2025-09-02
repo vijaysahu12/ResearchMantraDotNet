@@ -6,7 +6,7 @@ using RM.CommonServices;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -40,7 +40,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using static RM.Database.KingResearchContext.Subscriptions;
+using static RM.Database.ResearchMantraContext.Subscriptions;
 using static RM.Model.Models.PerformanceModel;
 using Log = RM.Model.MongoDbCollection.Log;
 
@@ -162,7 +162,7 @@ namespace RM.API.Services
         private readonly IAzureBlobStorageService _azureBlobStorageService;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly FirebaseRealTimeDb _firebaseService;
-        public MobileService(KingResearchContext context, IActivityService activityService,
+        public MobileService(ResearchMantraContext context, IActivityService activityService,
             IConfiguration configuration, IMongoRepository<Log> mongoRepo, MongoDbService mongoDbService,
             IMobileNotificationService pushNotification, IMongoRepository<ExceptionLog> exceptionLog, IAzureBlobStorageService azureBlobStorageService, IHttpContextAccessor httpContextAccessor,
              FirebaseRealTimeDb firebaseService)
@@ -179,7 +179,7 @@ namespace RM.API.Services
             _firebaseService = firebaseService;
         }
 
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
         private readonly IActivityService _activityService;
         private readonly IConfiguration _configuration;
         private ApiCommonResponseModel responseModel = new();

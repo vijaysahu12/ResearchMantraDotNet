@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Data.Entity.ModelConfiguration;

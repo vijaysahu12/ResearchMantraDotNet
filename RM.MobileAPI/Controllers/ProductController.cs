@@ -1,5 +1,5 @@
 ﻿using RM.CommonServices.Helpers;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.RequestModel;
 using RM.Model.RequestModel.MobileApi;

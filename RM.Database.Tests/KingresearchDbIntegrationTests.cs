@@ -11,7 +11,7 @@ namespace RM.Database.Tests;
 
 public class KingresearchDbIntegrationTests
 {
-    private RM.Database.KingResearchContext.KingResearchContext _context = null!;
+    private RM.Database.ResearchMantraContext.ResearchMantraContext _context = null!;
     private DatabaseFixture _fixture = null!;
     
     [OneTimeSetUp]

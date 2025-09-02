@@ -1,6 +1,6 @@
 ﻿using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.ResponseModel;
@@ -23,9 +23,9 @@ namespace RM.MService.Services
     public class ResearchService : IResearchService
     {
         private ApiCommonResponseModel responseModel = new();
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
 
-        public ResearchService(KingResearchContext context)
+        public ResearchService(ResearchMantraContext context)
         {
             _dbContext = context;
         }

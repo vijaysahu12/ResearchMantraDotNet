@@ -1,6 +1,6 @@
 ﻿using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.DB.Tables;
@@ -20,7 +20,7 @@ namespace RM.API.Services
 
     public class LeadService : ILeadService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel apiCommonResponse = new();
 
 

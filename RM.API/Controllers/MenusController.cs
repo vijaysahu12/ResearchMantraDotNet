@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using RM.Model.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,9 +14,9 @@ namespace RM.API.Controllers
     [ApiController]
     public class MenusController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public MenusController(KingResearchContext context)
+        public MenusController(ResearchMantraContext context)
         {
             _context = context;
         }

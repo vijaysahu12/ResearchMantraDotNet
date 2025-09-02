@@ -1,5 +1,5 @@
 ﻿using RM.API.Models.Mail;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
@@ -21,9 +21,9 @@ namespace RM.API.Services
     {
         private readonly MailSettings _mailSettings;
         private readonly MailSettingsMarketManthan _mailSettingsMarketManthan;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public MailService(IOptions<MailSettings> mailSettings, IOptions<MailSettingsMarketManthan> mailSettingsMarketManthan, KingResearchContext context)
+        public MailService(IOptions<MailSettings> mailSettings, IOptions<MailSettingsMarketManthan> mailSettingsMarketManthan, ResearchMantraContext context)
         {
             _mailSettings = mailSettings.Value;
             _mailSettingsMarketManthan = mailSettingsMarketManthan.Value;

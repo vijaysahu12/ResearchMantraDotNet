@@ -1,6 +1,6 @@
 ﻿using RM.CommonServices.Helpers;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Models;
@@ -28,7 +28,7 @@ namespace RM.MobileAPI.Controllers
     {
         private readonly MongoDbService _mongoDbService;
         private readonly IMongoRepository<Model.MongoDbCollection.Log> _mongoRepo;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IPurchaseOrderMService _purchaseOrderService;
         private readonly ApiCommonResponseModel _response = new();
         private readonly IOtherService _otherSerivce;
@@ -38,12 +38,12 @@ namespace RM.MobileAPI.Controllers
         private static readonly object _tokenLock = new object();
         public IConfiguration _configuration { get; }
 
-        public OtherController(IConfiguration configuration, MongoDbService mongoDbService, KingResearchContext kingResearchContext,
+        public OtherController(IConfiguration configuration, MongoDbService mongoDbService, ResearchMantraContext ResearchMantraContext,
             IPurchaseOrderMService purchaseOrderService, IOtherService otherSerivce, IMongoRepository<Model.MongoDbCollection.Log> mongoRepo, 
             IEmailService emailService)
         {
             _mongoDbService = mongoDbService;
-            _context = kingResearchContext;
+            _context = ResearchMantraContext;
             _purchaseOrderService = purchaseOrderService;
             _configuration = configuration;
             _otherSerivce = otherSerivce; _mongoRepo = mongoRepo;

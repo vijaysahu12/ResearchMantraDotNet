@@ -1,5 +1,5 @@
 ﻿using RM.API.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +14,9 @@ namespace RM.API.Controllers
     [ApiController]
     public class CustomerServicesController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IPurchaseOrderService _purchaseOrderService;
-        public CustomerServicesController(KingResearchContext context, IPurchaseOrderService purchaseOrderService)
+        public CustomerServicesController(ResearchMantraContext context, IPurchaseOrderService purchaseOrderService)
         {
             _purchaseOrderService = purchaseOrderService;
             _context = context;
@@ -34,7 +34,7 @@ namespace RM.API.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCustomerService(string id, Database.KingResearchContext.CustomerService customerService)
+        public async Task<IActionResult> PutCustomerService(string id, Database.ResearchMantraContext.CustomerService customerService)
         {
             if (id != customerService.PublicKey.ToString())
             {
@@ -43,7 +43,7 @@ namespace RM.API.Controllers
 
             _context.Entry(customerService).State = EntityState.Modified;
 
-            Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry<Database.KingResearchContext.CustomerService> entry = _context.Entry(customerService);
+            Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry<Database.ResearchMantraContext.CustomerService> entry = _context.Entry(customerService);
             entry.Property(e => e.PublicKey).IsModified = false;
             entry.Property(e => e.CreatedOn).IsModified = false;
             entry.Property(e => e.CreatedBy).IsModified = false;

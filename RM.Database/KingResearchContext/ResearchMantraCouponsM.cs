@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RM.Database.KingResearchContext
+namespace RM.Database.ResearchMantraContext
 {
-    public class KingResearchCouponsM
+    public class ResearchMantraCouponsM
     {
 
         public int Id { get; set; }

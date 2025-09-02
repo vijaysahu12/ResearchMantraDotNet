@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RM.Database.KingResearchContext
+namespace RM.Database.ResearchMantraContext
 {
     public class TicketM
     {

@@ -4,8 +4,8 @@ using RM.API.Models.Mail;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
-using RM.Database.KingResearchContext.Tables;
+using RM.Database.ResearchMantraContext;
+using RM.Database.ResearchMantraContext.Tables;
 using RM.Database.MongoDbContext;
 using RM.Model.DB.Tables;
 using RM.Model.MongoDbCollection;
@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using PushNotification = RM.Database.KingResearchContext.Tables.PushNotification;
+using PushNotification = RM.Database.ResearchMantraContext.Tables.PushNotification;
 
 namespace RM.API.Services
 {
@@ -37,7 +37,7 @@ namespace RM.API.Services
     [Authorize]
     public class SchedulerService : ISchedulerService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IMongoRepository<Log> _mongoRepo;
         private readonly IMailService _mailService;
         private readonly IHubContext<NotificationHub> _hubContext;
@@ -46,7 +46,7 @@ namespace RM.API.Services
         private readonly IStocksService _stocksService;
 
 
-        public SchedulerService(IStocksService stocksService, KingResearchContext context, IMongoRepository<Log> mongoRepo, IMailService mailService,
+        public SchedulerService(IStocksService stocksService, ResearchMantraContext context, IMongoRepository<Log> mongoRepo, IMailService mailService,
             IHubContext<NotificationHub> hubContext, IPushNotificationService pushNotificationService, IConfiguration config)
         {
             _config = config;

@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace RM.Database.KingResearchContext;
+namespace RM.Database.ResearchMantraContext;
 public partial class LeadsImport
 {
     public long Id { get; set; }

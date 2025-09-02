@@ -3,7 +3,7 @@ using RM.API.Dtos;
 using RM.API.Models.Constants;
 using RM.API.Models.Reports;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using Microsoft.Data.SqlClient;
@@ -57,10 +57,10 @@ namespace RM.API.Services
 
     public class PartnerService : IPartnerService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel apiCommonResponse = new();
 
-        public PartnerService(KingResearchContext context)
+        public PartnerService(ResearchMantraContext context)
         {
             _context = context;
         }

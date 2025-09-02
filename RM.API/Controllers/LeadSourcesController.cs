@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -12,9 +12,9 @@ namespace RM.API.Controllers
     [ApiController]
     public class LeadSourcesController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public LeadSourcesController(KingResearchContext context)
+        public LeadSourcesController(ResearchMantraContext context)
         {
             _context = context;
         }

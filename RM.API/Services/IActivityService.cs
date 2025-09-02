@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using RM.Model.DB.Tables;
 using System;
 using System.Threading.Tasks;
@@ -13,9 +13,9 @@ namespace RM.API.Services
 
     public class ActivityService : IActivityService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public ActivityService(KingResearchContext context)
+        public ActivityService(ResearchMantraContext context)
         {
             _context = context;
         }

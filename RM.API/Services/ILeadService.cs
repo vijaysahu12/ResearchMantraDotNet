@@ -4,7 +4,7 @@ using RM.API.Helpers;
 using RM.API.Models;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -49,12 +49,12 @@ namespace RM.API.Services
 
     public class LeadService : ILeadService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel apiCommonResponse = new();
         private readonly IActivityService _activityService;
         private readonly IMongoRepository<Log> _log;
 
-        public LeadService(KingResearchContext context, IActivityService activityService, IMongoRepository<Log> log)
+        public LeadService(ResearchMantraContext context, IActivityService activityService, IMongoRepository<Log> log)
         {
             _log = log;
             _context = context;

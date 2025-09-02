@@ -3,7 +3,7 @@ using FirebaseAdmin.Messaging;
 using RM.CommonServices;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.RequestModel.Notification;
@@ -28,12 +28,12 @@ namespace RM.MService.Services
 
         private readonly FirebaseRealTimeDb _realDb;
         private readonly StockMarketContractsService _stockData;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         readonly ApiCommonResponseModel apiCommonResponse = new();
         readonly IConfiguration _configuration;
         private static DateTime? lastTriggerDate = null; // Static field to store the last trigger date
 
-        public ScreenerService(KingResearchContext repository, StockMarketContractsService stockData, IMobileNotificationService notificationService, IConfiguration configuration, FirebaseRealTimeDb realDb)
+        public ScreenerService(ResearchMantraContext repository, StockMarketContractsService stockData, IMobileNotificationService notificationService, IConfiguration configuration, FirebaseRealTimeDb realDb)
         {
             _notificationService = notificationService;
             _realDb = realDb;

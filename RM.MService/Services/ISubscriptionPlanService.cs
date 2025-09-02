@@ -1,15 +1,15 @@
 ﻿using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using Microsoft.Data.SqlClient;
 using static RM.Model.Models.SubscriptionModel;
 
 namespace RM.MService.Services
 {
-    public class SubscriptionPlanService(KingResearchContext repository)
+    public class SubscriptionPlanService(ResearchMantraContext repository)
     {
-        private readonly KingResearchContext _context = repository;
+        private readonly ResearchMantraContext _context = repository;
         private readonly ApiCommonResponseModel _responseModel = new();
         public async Task<ApiCommonResponseModel> GetSubscriptionById(SubscriptionRequestModel request)
         {

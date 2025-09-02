@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RM.Database.KingResearchContext
+namespace RM.Database.ResearchMantraContext
 {
     public class DashboardServiceM
     {

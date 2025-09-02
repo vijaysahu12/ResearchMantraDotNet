@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model.RequestModel;
 
 namespace RM.API.Helpers

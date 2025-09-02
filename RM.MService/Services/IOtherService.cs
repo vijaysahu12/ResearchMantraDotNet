@@ -1,7 +1,7 @@
 ﻿using Azure;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.MongoDbCollection;
@@ -27,10 +27,10 @@ namespace RM.MService.Services
         Task LmsWebhookWhatsAppAsync();
     }
 
-    public class OtherService(KingResearchContext kingResearchContext, IConfiguration configuration, IMongoRepository<ExceptionLog> exception, IMongoRepository<Log> logger) : IOtherService
+    public class OtherService(ResearchMantraContext ResearchMantraContext, IConfiguration configuration, IMongoRepository<ExceptionLog> exception, IMongoRepository<Log> logger) : IOtherService
     {
         private readonly ApiCommonResponseModel responseModel = new();
-        private readonly KingResearchContext _context = kingResearchContext;
+        private readonly ResearchMantraContext _context = ResearchMantraContext;
         private readonly IMongoRepository<Log> _logger = logger;
         private readonly IMongoRepository<ExceptionLog> _exception = exception;
 

@@ -3,8 +3,8 @@ using RM.CommonService;
 using RM.CommonService.Helpers;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
-using RM.Database.KingResearchContext.Tables;
+using RM.Database.ResearchMantraContext;
+using RM.Database.ResearchMantraContext.Tables;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -58,14 +58,14 @@ namespace RM.CommonServices.Services
         private readonly IMongoCollection<ReportReason> _reportReasonCollection;
         private readonly IMongoCollection<UserBlock> _userBlockCollection;
         private readonly IMongoCollection<UserVersionReport> _userVersion;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly CommunityPostService _communityPostService;
 
         private readonly IConfiguration _configuration;
 
         public MongoDbService(IOptions<MongoDBSettings> mongoDBSettings,
             IMemoryCache cache,
-            ILogger<MongoDbService> logger, IConfiguration configuration, KingResearchContext context,
+            ILogger<MongoDbService> logger, IConfiguration configuration, ResearchMantraContext context,
             IAzureBlobStorageService azureBlobStorageService, CommunityPostService communityPostService)
         {
             MongoClient client = new(mongoDBSettings.Value.ConnectionURI);

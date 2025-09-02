@@ -2,7 +2,7 @@
 using RM.API.Models;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using Microsoft.AspNetCore.Mvc;
@@ -39,9 +39,9 @@ namespace RM.API.Services
     }
     public class CustomerService : ICustomerService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel responseModel = new();
-        public CustomerService(KingResearchContext context)
+        public CustomerService(ResearchMantraContext context)
         {
             _context = context;
         }

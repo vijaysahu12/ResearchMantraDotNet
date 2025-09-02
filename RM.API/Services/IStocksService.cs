@@ -1,5 +1,5 @@
 ﻿using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.ResponseModel;
 using System;
@@ -17,9 +17,9 @@ namespace RM.API.Services
 
     public class StocksService : IStocksService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public StocksService(KingResearchContext context)
+        public StocksService(ResearchMantraContext context)
         {
             _context = context;
         }

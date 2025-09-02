@@ -1,6 +1,6 @@
 ﻿using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.MongoDbCollection;
 using RM.Model.RequestModel;
@@ -33,12 +33,12 @@ namespace RM.MService.Services
 
     public class TicketService : ITicketService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private ApiCommonResponseModel apiCommonResponseModel = null;
         private readonly IConfiguration _config;
         private readonly ApiCommonResponseModel responseModel = new();
 
-        public TicketService(KingResearchContext context, IConfiguration configuration)
+        public TicketService(ResearchMantraContext context, IConfiguration configuration)
         {
             _context = context;
             _config = configuration;

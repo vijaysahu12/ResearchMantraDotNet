@@ -5,7 +5,7 @@ using RM.API.Models;
 using RM.API.Services;
 using RM.CommonServices.Helpers;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model.Common;
 using RM.Model.Models;
 using RM.Model.RequestModel;
@@ -36,12 +36,12 @@ namespace RM.API.Controllers
     {
         private readonly IMobileService _mobileProductService;
         private readonly IConfiguration _config;
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
         private readonly MongoDbService _mongoDbService;
        
         private readonly IBlogService _blogService;
 
-        public MobileController(IMobileService mobileProductService, IConfiguration config, KingResearchContext dbContext,
+        public MobileController(IMobileService mobileProductService, IConfiguration config, ResearchMantraContext dbContext,
             MongoDbService mongoDbService, IBlogService blogService)
         {
             _mobileProductService = mobileProductService;

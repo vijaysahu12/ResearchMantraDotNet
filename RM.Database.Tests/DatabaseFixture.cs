@@ -1,4 +1,4 @@
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -8,7 +8,7 @@ namespace RM.Database.Tests;
     
 public class DatabaseFixture : IDisposable
 {
-    public RM.Database.KingResearchContext.KingResearchContext Context { get; }
+    public RM.Database.ResearchMantraContext.ResearchMantraContext Context { get; }
 
     public DatabaseFixture()
     {
@@ -17,10 +17,10 @@ public class DatabaseFixture : IDisposable
             .Build();
 
         var connectionString = config.GetConnectionString("GurujiDevCS")!;
-        var options = new DbContextOptionsBuilder<RM.Database.KingResearchContext.KingResearchContext>()
+        var options = new DbContextOptionsBuilder<RM.Database.ResearchMantraContext.ResearchMantraContext>()
             .UseSqlServer(connectionString)
             .Options;
-        Context = new RM.Database.KingResearchContext.KingResearchContext(options);
+        Context = new RM.Database.ResearchMantraContext.ResearchMantraContext(options);
     }
 
     public void Dispose()

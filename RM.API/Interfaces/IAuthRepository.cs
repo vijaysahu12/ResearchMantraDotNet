@@ -1,6 +1,6 @@
 ﻿using RM.API.Dtos;
 using RM.API.Models;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using System;
 using System.Threading.Tasks;
 

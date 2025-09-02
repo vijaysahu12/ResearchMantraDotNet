@@ -1,6 +1,6 @@
 ﻿using RM.CommonServices.Helpers;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.RequestModel;
@@ -20,12 +20,12 @@ namespace RM.MobileAPI.Controllers
     public class CalculatorController : ControllerBase
     {
         private readonly IOtherService _otherSerivce;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public CalculatorController(IOtherService otherSerivce, KingResearchContext kingResearchContext)
+        public CalculatorController(IOtherService otherSerivce, ResearchMantraContext ResearchMantraContext)
         {
             _otherSerivce = otherSerivce;
-            _context = kingResearchContext;
+            _context = ResearchMantraContext;
         }
         [AllowAnonymous]
         [HttpPost("GetFuturePlans")]

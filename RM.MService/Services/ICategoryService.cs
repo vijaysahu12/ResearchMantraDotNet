@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using RM.Model;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
@@ -11,10 +11,10 @@ public interface ICategoryService
 }
 public class CategoryService : ICategoryService
 {
-    private readonly KingResearchContext _dbContext;
+    private readonly ResearchMantraContext _dbContext;
     ApiCommonResponseModel responseModel = new();
 
-    public CategoryService(KingResearchContext dbContext)
+    public CategoryService(ResearchMantraContext dbContext)
     {
         _dbContext = dbContext;
     }

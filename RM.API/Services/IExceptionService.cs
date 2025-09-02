@@ -1,5 +1,5 @@
-﻿using RM.Database.KingResearchContext;
-using RM.Database.KingResearchContext.Tables;
+﻿using RM.Database.ResearchMantraContext;
+using RM.Database.ResearchMantraContext.Tables;
 using RM.Model;
 using System;
 using System.Net;
@@ -16,8 +16,8 @@ namespace RM.API.Services
 
     public class ExceptionService : IExceptionService
     {
-        public KingResearchContext _context;
-        public ExceptionService(KingResearchContext context)
+        public ResearchMantraContext _context;
+        public ExceptionService(ResearchMantraContext context)
         {
             _context = context;
 

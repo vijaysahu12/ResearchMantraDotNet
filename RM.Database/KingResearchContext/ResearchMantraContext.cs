@@ -1,16 +1,16 @@
-﻿using RM.Database.KingResearchContext.Tables;
+﻿using RM.Database.ResearchMantraContext.Tables;
 using RM.Model.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace RM.Database.KingResearchContext;
+namespace RM.Database.ResearchMantraContext;
 
-public partial class KingResearchContext : DbContext
+public partial class ResearchMantraContext : DbContext
 {
-    public KingResearchContext()
+    public ResearchMantraContext()
     {
     }
 
-    public KingResearchContext(DbContextOptions<KingResearchContext> options)
+    public ResearchMantraContext(DbContextOptions<ResearchMantraContext> options)
         : base(options)
     {
     }
@@ -36,7 +36,7 @@ public partial class KingResearchContext : DbContext
     public virtual DbSet<Customer> Customers { get; set; }
 
     public virtual DbSet<CustomerKyc> CustomerKycs { get; set; }
-    public virtual DbSet<KingResearchCouponsM> KingResearchCouponsM { get; set; }
+    public virtual DbSet<ResearchMantraCouponsM> ResearchMantraCouponsM { get; set; }
     public virtual DbSet<CouponsM> CouponsM { get; set; }
     public virtual DbSet<CouponUserMappingM> CouponUserMappingM { get; set; }
     public virtual DbSet<CouponProductMappingM> CouponProductMappingM { get; set; }

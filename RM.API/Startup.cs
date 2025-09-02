@@ -11,7 +11,7 @@ using RM.ChatGPT;
 using RM.CommonService;
 using RM.CommonServices;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.MService.Services;
 using RM.NotificationService;
@@ -57,7 +57,7 @@ namespace RM.API
                 return client.GetDatabase(mongoSettings.DatabaseName);
             });
 
-            _ = services.AddDbContext<KingResearchContext>(options => options.UseSqlServer(Configuration.GetConnectionString("GurujiDevCS")));
+            _ = services.AddDbContext<ResearchMantraContext>(options => options.UseSqlServer(Configuration.GetConnectionString("GurujiDevCS")));
             _ = services.AddControllers();
             var allowedOrigins = Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
             _ = services.AddCors(options =>

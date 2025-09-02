@@ -1,7 +1,7 @@
 ////using RM.BlobStorage;
 ////using RM.Database.Constants;
 ////using RM.Database.Extension;
-////using RM.Database.KingResearchContext;
+////using RM.Database.ResearchMantraContext;
 ////using RM.Database.MongoDbContext;
 ////using RM.Model;
 ////using RM.Model.Common;
@@ -24,12 +24,12 @@
 ////        private readonly IMemoryCache _cache;
 ////        private readonly IAzureBlobStorageService _azureBlobStorageService;
 ////        private readonly IConfiguration _configuration;
-////        private readonly KingResearchContext _context;
+////        private readonly ResearchMantraContext _context;
 ////        private readonly IMongoCollection<CommunityPost> _communityPost;
 ////        ApiCommonResponseModel _apiResponse = new();
 ////        public CommunityPostService(IOptions<MongoDBSettings> mongoDBSettings,
 ////           IMemoryCache cache,
-////           IConfiguration configuration, KingResearchContext context,
+////           IConfiguration configuration, ResearchMantraContext context,
 ////           IAzureBlobStorageService azureBlobStorageService)
 ////        {
 ////            MongoClient client = new(mongoDBSettings.Value.ConnectionURI);

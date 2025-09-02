@@ -5,7 +5,7 @@ using RM.CommonServices;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -45,7 +45,7 @@ namespace RM.API.Services
     public class DashboardService : IDashboardService
     {
         private readonly ApiCommonResponseModel responseModel = new();
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly PreAndPostMarketService _preAndPostMarketService;
         private readonly IMongoDatabase _database;
         private readonly IMongoCollection<PreMarketReport.PreMarketCollection> _collection;
@@ -57,7 +57,7 @@ namespace RM.API.Services
         private readonly IMemoryCache _cache;
         private readonly IMobileService _mobileService;
 
-        public DashboardService(KingResearchContext context,
+        public DashboardService(ResearchMantraContext context,
                     IOptions<MongoDBSettings> mongoDBSettings,
                     StockInsightService insightService,
                     IMobileNotificationService notificationService,

@@ -6,7 +6,7 @@ using RM.CommonServices;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -41,7 +41,7 @@ namespace RM.CommonService
         private readonly IMongoDatabase _database;
         private readonly IAzureBlobStorageService _azureBlobStorageService;
         private readonly IConfiguration _configuration;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IMongoRepository<Log> _log;
         private readonly IMongoRepository<CommunityPost> _communityRepo;
         private readonly IMongoRepository<CommunityComments> _communityCommentsRepo;
@@ -61,7 +61,7 @@ namespace RM.CommonService
 
         ApiCommonResponseModel _apiResponse = new();
         public CommunityPostService(IOptions<MongoDBSettings> mongoDBSettings,
-           IConfiguration configuration, KingResearchContext context,
+           IConfiguration configuration, ResearchMantraContext context,
            IAzureBlobStorageService azureBlobStorageService, IMongoRepository<Log> log, IMongoRepository<CommunityPost> communityPostRepo,
            Lazy<IMobileNotificationService> mobileNotificationService, ILogger<CommunityPostService> logger)
         {

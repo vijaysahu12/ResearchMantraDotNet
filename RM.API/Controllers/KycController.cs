@@ -1,6 +1,6 @@
 ﻿using Google.Api.Gax.ResourceNames;
 using RM.API.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using Microsoft.AspNetCore.Authorization;

@@ -1,7 +1,7 @@
 ﻿using RM.API.Services;
 using RM.CommonServices;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.ResponseModel;
@@ -26,12 +26,12 @@ namespace RM.API.Controllers
     [ApiController]
     public class StocksController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IStocksService _stocksService;
         private readonly StockMarketContractsService _stockMarketContractsService;
         //to read   c drive file C:\MyFiles
         private readonly string _directoryPath = @"D:\\SymbolData";
-        public StocksController(KingResearchContext context, IStocksService stocksService, StockMarketContractsService _IStockMarketContractsService)
+        public StocksController(ResearchMantraContext context, IStocksService stocksService, StockMarketContractsService _IStockMarketContractsService)
         {
             _context = context;
             _stocksService = stocksService;

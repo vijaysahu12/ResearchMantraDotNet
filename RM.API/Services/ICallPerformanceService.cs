@@ -4,7 +4,7 @@ using RM.API.Models.Reports;
 using RM.CommonService.Helpers;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.ResponseModel;
@@ -33,9 +33,9 @@ namespace RM.API.Services
 
     public class CallPerformanceService : ICallPerformanceService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel apiCommonResponseModel = new();
-        public CallPerformanceService(KingResearchContext context)
+        public CallPerformanceService(ResearchMantraContext context)
         {
             _context = context;
         }

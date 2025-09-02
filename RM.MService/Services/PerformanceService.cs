@@ -1,7 +1,7 @@
 ﻿using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -19,10 +19,10 @@ namespace RM.MService.Services
     public class PerformanceService : IPerformanceService
     {
         private readonly ApiCommonResponseModel _responseModel = new ApiCommonResponseModel();
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
         private readonly MongoDbService _mongoDbService;
 
-        public PerformanceService(KingResearchContext context, MongoDbService mongoDbService)
+        public PerformanceService(ResearchMantraContext context, MongoDbService mongoDbService)
         {
             _dbContext = context;
             _mongoDbService = mongoDbService;

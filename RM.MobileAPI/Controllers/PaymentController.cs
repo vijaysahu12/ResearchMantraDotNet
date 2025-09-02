@@ -1,7 +1,7 @@
 ﻿using Azure.Core;
 using RM.CommonServices;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -30,13 +30,13 @@ namespace RM.MobileAPI.Controllers
     public class PaymentController : ControllerBase
     {
         readonly IPurchaseOrderMService _purchaseOrderService;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IMongoRepository<Model.MongoDbCollection.Log> _mongoRepo;
         private readonly IOtherService _otherSerivce;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IConfiguration _configuration;
 
-        public PaymentController(IPurchaseOrderMService purchaseOrderService, KingResearchContext context,
+        public PaymentController(IPurchaseOrderMService purchaseOrderService, ResearchMantraContext context,
             IMongoRepository<Model.MongoDbCollection.Log> mongoRepo, IOtherService otherSerivce, IHttpContextAccessor httpContextAccessor, IConfiguration configuration)
         {
             _purchaseOrderService = purchaseOrderService;

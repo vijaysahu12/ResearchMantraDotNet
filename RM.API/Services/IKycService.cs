@@ -4,7 +4,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.draw;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.ResponseModel;
@@ -33,10 +33,10 @@ namespace RM.API.Services
 
     public class KycService : IKycService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel apiCommonResponse = new();
 
-        public KycService(KingResearchContext context)
+        public KycService(ResearchMantraContext context)
         {
             _context = context;
         }

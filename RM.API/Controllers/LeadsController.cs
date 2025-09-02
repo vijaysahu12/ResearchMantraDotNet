@@ -6,7 +6,7 @@ using RM.API.Models.Constants;
 using RM.API.Services;
 using RM.CommonServices.Helpers;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.DB.Tables;
@@ -50,14 +50,14 @@ namespace RM.API.Controllers
     [ApiController]
     public class LeadsController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ILeadService _leadService;
         private readonly IActivityService _activityService;
         private readonly IPurchaseOrderService _purchaseOrderService;
         private readonly IConfiguration _config;
         private ApiCommonResponseModel apiCommonResponse = new();
 
-        public LeadsController(KingResearchContext context, IConfiguration config, ILeadService leadService, IActivityService activityService, IPurchaseOrderService purchaseOrderService)
+        public LeadsController(ResearchMantraContext context, IConfiguration config, ILeadService leadService, IActivityService activityService, IPurchaseOrderService purchaseOrderService)
         {
             _context = context;
             _config = config;

@@ -2,7 +2,7 @@
 using RM.API.Interfaces;
 using RM.API.Models;
 using RM.API.Models.Mobile;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,8 +14,8 @@ namespace RM.API.Services
 {
     public class AuthRepository : IAuthRepository
     {
-        private readonly KingResearchContext _gurujiDbContext;
-        public AuthRepository(KingResearchContext gurujiDbContext)
+        private readonly ResearchMantraContext _gurujiDbContext;
+        public AuthRepository(ResearchMantraContext gurujiDbContext)
         {
             _gurujiDbContext = gurujiDbContext;
         }

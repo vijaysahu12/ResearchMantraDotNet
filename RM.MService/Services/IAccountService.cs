@@ -3,7 +3,7 @@ using RM.CommonServices;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.MongoDbCollection;
@@ -78,7 +78,7 @@ namespace RM.MService.Services
 
     public class AccountService : IAccountService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ApiCommonResponseModel responseModel = new();
         private readonly MongoDbService _mongoService;
         private readonly IMobileNotificationService _mobileNotificationService;
@@ -88,7 +88,7 @@ namespace RM.MService.Services
         private readonly int _tokenExpiryInDays = 20;
         private readonly IMongoRepository<Log> _log;
         private readonly IMongoRepository<ExceptionLog> _exception;
-        public AccountService(KingResearchContext context, IConfiguration config,
+        public AccountService(ResearchMantraContext context, IConfiguration config,
             MongoDbService mongoService, IMobileNotificationService mobileNotificationService,
             IAzureBlobStorageService azureBlobStorageService, IMongoRepository<Log> mongoRepo, IMongoRepository<ExceptionLog> exception, IEmailService emailService)
         {

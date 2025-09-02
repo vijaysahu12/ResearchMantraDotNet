@@ -5,7 +5,7 @@ using RM.CommonServices;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
@@ -58,7 +58,7 @@ namespace RM.MService.Services
 
     }
 
-    public class BlogService(IConfiguration configuration, KingResearchContext context, MongoDbService mongoService, IMobileNotificationService mobileNotificationService,
+    public class BlogService(IConfiguration configuration, ResearchMantraContext context, MongoDbService mongoService, IMobileNotificationService mobileNotificationService,
 
         IAzureBlobStorageService azureBlobStorageService, IMongoRepository<Model.MongoDbCollection.User> userCollection, IMongoRepository<BlogReport> blogReportCollection,
         IMongoRepository<Blog> blog, IMongoRepository<Comment> commnetCollection) : IBlogService
@@ -67,7 +67,7 @@ namespace RM.MService.Services
 
         private readonly IConfiguration _configuration = configuration;
         private readonly ApiCommonResponseModel responseModel = new();
-        private readonly KingResearchContext _context = context;
+        private readonly ResearchMantraContext _context = context;
         private readonly IMongoRepository<Model.MongoDbCollection.User> _userRepository = userCollection;
         private readonly IMongoRepository<Blog> _blog = blog;
         private readonly MongoDbService _mongoService = mongoService;

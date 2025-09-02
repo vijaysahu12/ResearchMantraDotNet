@@ -1,5 +1,5 @@
 ﻿using RM.Database.Constants;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.RequestModel;
 using Microsoft.Data.SqlClient;
@@ -32,14 +32,14 @@ namespace RM.MService.Services
 
     public class DashboardService : IDashboardService
     {
-        public DashboardService(KingResearchContext context, IConfiguration config)
+        public DashboardService(ResearchMantraContext context, IConfiguration config)
         {
             _context = context;
             _config = config;
         }
 
         private readonly ApiCommonResponseModel responseModel = new();
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IConfiguration _config;
 
         public async Task<ApiCommonResponseModel> GetAdvertisementImageList(string type)

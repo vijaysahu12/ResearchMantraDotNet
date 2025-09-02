@@ -1,6 +1,6 @@
 ﻿using RM.API.Dtos;
 using RM.API.Helpers;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using Microsoft.AspNetCore.Authorization;
@@ -17,11 +17,11 @@ namespace RM.API.Controllers
     [ApiController]
     public class DashboardController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IConfiguration _config;
         private readonly IDashboardService _dashboardService;
 
-        public DashboardController(KingResearchContext context, IConfiguration config, IDashboardService dashboardService)
+        public DashboardController(ResearchMantraContext context, IConfiguration config, IDashboardService dashboardService)
         {
             _context = context;
             _config = config;

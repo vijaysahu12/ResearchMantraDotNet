@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using RM.Model.Common;
 using Microsoft.Data.SqlClient;
 using System;

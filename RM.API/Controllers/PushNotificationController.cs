@@ -3,8 +3,8 @@ using RM.API.Helpers;
 using RM.API.Hub;
 using RM.API.Services;
 using RM.CommonServices.Services;
-using RM.Database.KingResearchContext;
-using RM.Database.KingResearchContext.Tables;
+using RM.Database.ResearchMantraContext;
+using RM.Database.ResearchMantraContext.Tables;
 using RM.Model.Common;
 using RM.Model.RequestModel;
 using RM.Model.RequestModel.Notification;
@@ -29,12 +29,12 @@ namespace RM.API.Controllers
     [ApiController]
     public class PushNotificationController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IPushNotificationService _pushNotification;
         private readonly IHubContext<NotificationHub> _hubContext;
         private readonly LandingPageService _landingPageService;
 
-        public PushNotificationController(KingResearchContext context, IPushNotificationService pushNotification, IHubContext<NotificationHub> hubContext,LandingPageService landingPageService)
+        public PushNotificationController(ResearchMantraContext context, IPushNotificationService pushNotification, IHubContext<NotificationHub> hubContext,LandingPageService landingPageService)
         {
             _hubContext = hubContext;
             _context = context;

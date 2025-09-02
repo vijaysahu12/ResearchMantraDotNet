@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using RM.Model.ResponseModel;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
-using static RM.Database.KingResearchContext.ScreenerTables;
+using static RM.Database.ResearchMantraContext.ScreenerTables;
 using static RM.Model.ResponseModel.ScreenerModel;
 
 namespace RM.API.Services
@@ -23,9 +23,9 @@ namespace RM.API.Services
 
     public class ScreenerServiceApi : IScreenerService
     {
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
 
-        public ScreenerServiceApi(KingResearchContext repository)
+        public ScreenerServiceApi(ResearchMantraContext repository)
         {
             _dbContext = repository;
         }

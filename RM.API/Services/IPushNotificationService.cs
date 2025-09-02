@@ -6,7 +6,7 @@ using RM.BlobStorage;
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.Common;
@@ -30,7 +30,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using PushNotification = RM.Database.KingResearchContext.Tables.PushNotification;
+using PushNotification = RM.Database.ResearchMantraContext.Tables.PushNotification;
 
 namespace RM.API.Services
 {
@@ -51,7 +51,7 @@ namespace RM.API.Services
     {
         private readonly ApiCommonResponseModel responseModel = new();
 
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IHubContext<NotificationHub> _hubContext;
         private readonly IAzureBlobStorageService _azureBlobStorageService;
         private readonly FirebaseNotification _firebaseNotification;
@@ -61,7 +61,7 @@ namespace RM.API.Services
 
 
 
-        public PushNotificationService(IOptions<PushNotificationVM> pushnotification, KingResearchContext context,
+        public PushNotificationService(IOptions<PushNotificationVM> pushnotification, ResearchMantraContext context,
             IHubContext<NotificationHub> hubContext, IAzureBlobStorageService azureBlobStorageService, FirebaseNotification firebaseNotification,
             IConfiguration configuration, MongoDbService mongoDbService, IMongoRepository<Log> mongoRepo)
         {

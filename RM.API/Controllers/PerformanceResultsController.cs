@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +13,9 @@ namespace RM.API.Controllers
     [ApiController]
     public class PerformanceResultsController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public PerformanceResultsController(KingResearchContext context)
+        public PerformanceResultsController(ResearchMantraContext context)
         {
             _context = context;
         }

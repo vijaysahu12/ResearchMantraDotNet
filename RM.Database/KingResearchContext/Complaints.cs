@@ -1,7 +1,7 @@
 ﻿using System;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 
-namespace RM.Database.KingResearchContext
+namespace RM.Database.ResearchMantraContext
 {
     public class Complaints
     {

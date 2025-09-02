@@ -4,7 +4,7 @@ using RM.API.Models;
 using RM.API.Services;
 using RM.BlobStorage;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.DB.Tables;
@@ -31,12 +31,12 @@ namespace RM.API.Controllers
     public class EnquiriesController
         : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IActivityService _activityService;
         private readonly IAzureBlobStorageService _azureBlobStorageService;
 
 
-        public EnquiriesController(KingResearchContext context, IActivityService activityService, IAzureBlobStorageService azureBlobStorageService)
+        public EnquiriesController(ResearchMantraContext context, IActivityService activityService, IAzureBlobStorageService azureBlobStorageService)
         {
             _context = context;
             _activityService = activityService;

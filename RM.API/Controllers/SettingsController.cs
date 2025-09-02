@@ -1,5 +1,5 @@
 ﻿using AutoMapper.Internal;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.RequestModel;
 using Microsoft.AspNetCore.Authorization;
@@ -18,9 +18,9 @@ namespace RM.API.Controllers
     [ApiController]
     public class SettingsController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public SettingsController(KingResearchContext context)
+        public SettingsController(ResearchMantraContext context)
         {
             _context = context;
         }

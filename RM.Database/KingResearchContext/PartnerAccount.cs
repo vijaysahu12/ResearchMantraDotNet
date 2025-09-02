@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RM.Database.KingResearchContext;
+namespace RM.Database.ResearchMantraContext;
 
 public partial class PartnerAccount
 {

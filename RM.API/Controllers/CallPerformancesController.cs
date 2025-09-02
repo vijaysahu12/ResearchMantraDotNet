@@ -5,7 +5,7 @@ using RM.API.Models.Reports;
 using RM.API.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.Common;
 using RM.Model.RequestModel;
@@ -26,11 +26,11 @@ namespace RM.API.Controllers
     [ApiController]
     public class CallPerformancesController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly ICallPerformanceService _ICallPerformance;
 
         private readonly IMapper _mapper;
-        public CallPerformancesController(KingResearchContext context, IMapper mapper, ICallPerformanceService callPerformance)
+        public CallPerformancesController(ResearchMantraContext context, IMapper mapper, ICallPerformanceService callPerformance)
         {
             _mapper = mapper;
             _context = context;

@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +14,9 @@ namespace RM.API.Controllers
     [ApiController]
     public class CustomerTagsController : ControllerBase
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public CustomerTagsController(KingResearchContext context)
+        public CustomerTagsController(ResearchMantraContext context)
         {
             _context = context;
         }

@@ -2,7 +2,7 @@
 using RM.CommonServices.Services;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Model;
 using RM.Model.RequestModel;
 using RM.Model.RequestModel.MobileApi;
@@ -57,14 +57,14 @@ namespace RM.MService.Services
 
     public class ProductService : IProductService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
         private readonly IMemoryCache _cache;
         private readonly MongoDbService _mongoService;
         private ApiCommonResponseModel responseModel = new();
         private readonly IConfiguration _config;
         private readonly IAzureBlobStorageService _azureBlobStorageService;
 
-        public ProductService(KingResearchContext context, IMemoryCache cache, MongoDbService mongoService,
+        public ProductService(ResearchMantraContext context, IMemoryCache cache, MongoDbService mongoService,
             IConfiguration config, IAzureBlobStorageService azureBlobStorageService)
         {
             _context = context;

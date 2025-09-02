@@ -2,7 +2,7 @@
 using RM.API.Interfaces;
 using RM.API.Models;
 using RM.API.Models.Mobile;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,9 +23,9 @@ namespace RM.API.Controllers
     {
         private readonly IAuthRepository _repo;
         private readonly IConfiguration _config;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
-        public MobileAuthController(IAuthRepository repo, IConfiguration config, KingResearchContext context)
+        public MobileAuthController(IAuthRepository repo, IConfiguration config, ResearchMantraContext context)
         {
             _repo = repo;
             _config = config;

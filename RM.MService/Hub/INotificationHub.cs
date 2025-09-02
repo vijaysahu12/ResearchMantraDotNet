@@ -1,4 +1,4 @@
-﻿using RM.Database.KingResearchContext;
+﻿using RM.Database.ResearchMantraContext;
 using Microsoft.AspNetCore.SignalR;
 
 namespace RM.MService.Hub
@@ -11,11 +11,11 @@ namespace RM.MService.Hub
     public class NotificationHub : Hub<INotificationHub>
     {
         private readonly TokenService _tokenService;
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
 
 
-        public NotificationHub(TokenService tokenService, KingResearchContext context)
+        public NotificationHub(TokenService tokenService, ResearchMantraContext context)
         {
             _tokenService = tokenService;
             _context = context;

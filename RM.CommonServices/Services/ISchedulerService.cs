@@ -1,7 +1,7 @@
 ﻿using JarvisAlgo.Partner.Service.Alice;
 using RM.Database.Constants;
 using RM.Database.Extension;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.MongoDbCollection;
@@ -21,7 +21,7 @@ namespace RM.CommonServices.Services
 {
     public class SchedulerServiceMobile
     {
-        private readonly KingResearchContext _dbContext;
+        private readonly ResearchMantraContext _dbContext;
         private readonly MongoDbService _mongoDbService;
         private readonly FirebaseRealTimeDb _firebaseService;
         private readonly FirebaseNotification _firebaseNotification;
@@ -31,7 +31,7 @@ namespace RM.CommonServices.Services
         private readonly IConfiguration _configuration;
         private readonly string _scheduleTheTaskProp = "ScheduleTheTask";
         DateTime now = DateTime.Now;
-        public SchedulerServiceMobile(KingResearchContext context, IMongoRepository<Log> mongoRepo, MongoDbService mongoService,
+        public SchedulerServiceMobile(ResearchMantraContext context, IMongoRepository<Log> mongoRepo, MongoDbService mongoService,
             FirebaseRealTimeDb firebaseService, StockMarketContractsService stockData,
             FirebaseNotification firebaseNotification, IMongoRepository<ExceptionLog> exception, IConfiguration configuration)
         {

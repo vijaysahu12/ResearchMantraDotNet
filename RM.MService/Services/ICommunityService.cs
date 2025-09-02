@@ -2,7 +2,7 @@
 using System.Net;
 using RM.BlobStorage;
 using RM.CommonServices;
-using RM.Database.KingResearchContext;
+using RM.Database.ResearchMantraContext;
 using RM.Database.MongoDbContext;
 using RM.Model;
 using RM.Model.MongoDbCollection;
@@ -26,7 +26,7 @@ namespace RM.MService.Services
 
     public class CommunityService : ICommunityService
     {
-        private readonly KingResearchContext _context;
+        private readonly ResearchMantraContext _context;
 
         private readonly IMongoRepository<Log> _log;
         private readonly IMongoRepository<CommunityPost> _communityPost;
@@ -43,7 +43,7 @@ namespace RM.MService.Services
 
 
 
-        public CommunityService(IOptions<MongoDBSettings> mongoDBSettings, KingResearchContext dbContext, IMongoRepository<Log> log, IMongoRepository<CommunityPost> communityPost,
+        public CommunityService(IOptions<MongoDBSettings> mongoDBSettings, ResearchMantraContext dbContext, IMongoRepository<Log> log, IMongoRepository<CommunityPost> communityPost,
              IConfiguration configuration, IMongoCollection<Blog> blogCollection,
             IMongoRepository<CommunityComments> communityComment, IMobileNotificationService mobileNotificationService, IMongoCollection<User> userCollection, IAzureBlobStorageService azureBlobStorageService)
         {

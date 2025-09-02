@@ -1,7 +1,7 @@
 ﻿using RM.Model.RequestModel.Notification;
 using System;
 
-namespace RM.Database.KingResearchContext
+namespace RM.Database.ResearchMantraContext
 {
     public class PushNotificationsM
     {
